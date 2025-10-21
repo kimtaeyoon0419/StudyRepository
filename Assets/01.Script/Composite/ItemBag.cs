@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemBag : Item
+public class ItemBag : MementoItem
 {
-    private List<Item> itemList = new List<Item>();
+    private List<MementoItem> itemList = new List<MementoItem>();
 
     public ItemBag(string name, Type type = Type.Use) : base(name, type)
     {
@@ -20,7 +20,7 @@ public class ItemBag : Item
 
     }
 
-    public void Add(Item item)
+    public void Add(MementoItem item)
     {
         if(itemList.Contains(item))
         {
@@ -30,7 +30,7 @@ public class ItemBag : Item
         itemList.Add(item);
     }
 
-    public void Remove(Item item)
+    public void Remove(MementoItem item)
     {
         if (!itemList.Contains(item))
         {

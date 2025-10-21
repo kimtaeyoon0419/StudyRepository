@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ItemLeaf : Item
+public class ItemLeaf : MementoItem
 {
     public ItemLeaf(string name, Type type) : base(name, type)
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class Item
+public abstract class MementoItem
 {
     public enum Type
     {
@@ -15,7 +15,7 @@ public abstract class Item
 
     public abstract void Operate();
 
-    public Item(string name, Type type)
+    public MementoItem(string name, Type type)
     {
         this.name = name;
         this.type = type;
